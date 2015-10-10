@@ -1,3 +1,5 @@
+/* **** Generic **** */
+
 body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-weight: 400;
@@ -8,46 +10,51 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-.navbar * {
-	font-size: 22px !important;
+@media only screen and (max-width: 385px) {
+	body {
+		font-size: 0.7em;
+	}
 }
 
 .row {
 	min-height: 100vh;
 	overflow: hidden;
 	display: table;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 	max-width: none;
 }
 
-.button {
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+a.btn {
+	text-decoration: none;
+	color: #005c9e;
+	font-size: 1.2em;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
 }
 
-.button-group li {
-	padding-top: 3%;
+.reveal-modal img {
+	max-height: 500px;
 }
 
-.button-group a {
-	color: rgba(0, 0, 0, 1);
-	background-color: transparent;
+.floating-button {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
-.button-group a:hover {
-	color: rgba(0, 0, 0, 0.4);
-	background-color: transparent;
+.navbar * {
+	font-size: 22px !important;
 }
 
-.button-group {
-	float: none;
-}
 
-@media only screen and (min-width: 40.063em) {
-	.button-group {
-		float: right;
-	}
-}
+/* **** END Generic **** */
+
+
+/* **** Hero **** */
 
 .hero {
 	background: url("../img/background.jpg");
@@ -62,26 +69,30 @@ body {
 	padding-top: 20%;
 }
 
-@media only screen and (max-width: 385px) {
-	body {
-		font-size: 0.7em;
-	}
-}
-
 .intro-text p {
 	font-family: 'Dosis', sans-serif;
 	font-size: 2em;
 }
+
+.intro-text h2 {
+	color: #fff;
+	font-size: 3em;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 0 20px;
+	font-family: 'Oleo Script', cursive;
+}
+
+
+/* **** END Hero **** */
+
+
+/* **** Sections **** */
 
 .about,
 .work,
 .contact {
 	padding: 12% 0 0 0;
 	position: relative;
-}
-
-.about img{
-	margin-top: 3em;
 }
 
 .about {
@@ -103,7 +114,7 @@ body {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	object-fit: cover;
-	
+	margin-top: 3em;
 }
 
 .work img:hover {
@@ -119,29 +130,7 @@ body {
 .work li {
 	height: 200px;
 	overflow: hidden;
-	text-align: 
-}
-
-.intro-text h2 {
-	color: #fff;
-	font-size: 3em;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-	margin: 0 0 20px;
-	font-family: 'Oleo Script', cursive;
-}
-
-a.btn {
-	text-decoration: none;
-	color: #005c9e;
-	font-size: 1.2em;
-	border: 1px solid #fff;
-	padding: 10px 20px;
-	background: rgba(255, 255, 255, 0.9);
-	border-radius: 5px;
-}
-
-.reveal-modal img {
-	max-height: 500px;
+	text-align:
 }
 
 .icons {
@@ -157,7 +146,6 @@ a.btn {
 
 .icons ul li {
 	display: inline-block;
-	
 }
 
 .icons ul li a:hover {
@@ -172,11 +160,4 @@ a.btn {
 	border: 0;
 	margin-right: 10px;
 	color: inherit;
-}
-
-.floating-button {
-	position: absolute;
-	bottom: 1em;
-	left: 50%;
-    transform: translate(-50%, 0);
 }

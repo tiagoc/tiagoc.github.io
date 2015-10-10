@@ -67,7 +67,7 @@ body {
 	background: url("../img/background.jpg");
 	background-size: cover;
 	box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 0, 0.15);
-	height: 80%;
+	height: 65%;
 }
 
 .intro-text {
@@ -90,15 +90,15 @@ body {
 
 .intro-text p {
 	font-family: 'Dosis', sans-serif;
-	font-size: 44px;
-	background: rgba(195, 195, 195, 0.3);
-	border-radius: 25px;
+	font-size: 2em;
 }
 
 .about,
 .work,
 .contact {
 	padding: 50px 0 0 0;
+	display: flex;
+	align-items: center;
 }
 
 .about img {
@@ -112,15 +112,16 @@ body {
 
 .work img:hover {
 	opacity: 0.5;
-	-webkit-transition: 0.3s ease;
-	-moz-transition: 0.3s ease;
-	-ms-transition: 0.3s ease;
-	-o-transition: 0.3s ease;
-	transition: 0.3s ease;
+}
+
+.work img {
+	height: 150px;
+	width: 300px;
+	object-fit: cover;
 }
 
 .work li {
-	height: 140px;
+	height: 200px;
 	overflow: hidden;
 }
 
@@ -141,4 +142,25 @@ footer {
 footer a:hover {
 	color: rgba(0, 0, 0, 0.4);
 	background-color: transparent;
+}
+
+.intro-text h2 {
+	color: #fff;
+	font-size: 3em;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 0 20px;
+}
+
+a.btn {
+	text-decoration: none;
+	color: #005c9e;
+	font-size: 1.2em;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+}
+
+.reveal-modal img {
+	max-height: 500px;
 }

@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="js/vendor/modernizr.js"></script>
-	<link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
 		<div class="small-12 medium-8 large-6 columns">
 			<div class="nav-bar">
 				<ul class="button-group">
-					<li><a href="#" class="button">About me</a></li>
-					<li><a href="#" class="button">Projects</a></li>
-					<li><a href="#" class="button">Contact</a></li>
+					<li><a href="#aboutme" class="button">About me</a></li>
+					<li><a href="#projects" class="button">Projects</a></li>
+					<li><a href="#contact" class="button">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,15 +32,17 @@
 	<div class="hero">
 		<div class="row">
 			<div class="large-12 columns intro-text">
-				<p>Hi there!
-					<br> I'm Tiago, a 24 year-old software developer,
+				<h2>Hi there, I'm Tiago!</h2>
+				<p>
+					I'm a 24 year-old software developer,
 					<br /> from Viana do Castelo, Portugal.
 				</p>
+				<a href="#contact" class="btn">Contact me</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="row about">
+	<div class="row about" id="aboutme">
 		<div class="medium-6 large-8 columns">
 			<h4>About me</h4>
 			<p>As you've just read, my name is Tiago Cruzeiro and I'm a 24 year-old fella from Viana do Castelo, finishing my Master's on Informathics Engineering @FEUP.</p>
@@ -53,55 +55,139 @@
 		</div>
 	</div>
 
-	<div class="row work">
+	<div class="row work" id="projects">
 		<hr>
 		<div class="large-12 columns">
 			<h4>Projects</h4>
-			<p>I've assembled some of my past work, check it out:</p>
+			<p>Throughout the years I've worked with a lot of stuff. Here you can check my favourite past projects.</p>
 
-			<ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+			<h5>College projects:</h5>
+
+			<ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 				<li>
-					<a href="http://placehold.it/550x300">
-						<img data-caption="caption here" src="http://placehold.it/550x300"></a>
+					coding@escolaglobal
+					<a href="#" data-reveal-id="modal_escolaglobal">
+						<img src="img/escolagloballogo.png"></a>
+
+					<div id="modal_escolaglobal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">coding@escolaglobal</h2>
+						<p class="lead">An e-learning platform designed for teaching kids how to code.</p>
+						<p>In this project I focused on the adaptation of Google's Blockly API for our needs.</p>
+						<p>http://bittencookie.com/</p>
+						<img src="img/escolaglobalscreen.png">
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</li>
 				<li>
-					<a href="http://placehold.it/550x300"><img data-caption="caption 2 here..." src="http://placehold.it/550x300"></a>
+					Newsy
+					<a href="#" data-reveal-id="modal_newsy">
+						<img src="img/newsy.png"></a>
+
+					<div id="modal_newsy" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">Newsy - Fresh News, Your Way</h2>
+						<p class="lead">A platform for an online newspaper.</p>
+						<p></p>
+						<p>Newsy was arguably the project that got me loving frontend and responsive design.</p>
+						<p>In this project I did full-stack development, focusing on responsiveness </p>
+						<p>https://github.com/tiagoc/Newsy</p>
+						<img src="img/newsy.png">
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</li>
 				<li>
-					<a href="http://placehold.it/550x300"><img data-caption="caption 3 here..." src="http://placehold.it/550x300"></a>
+					EventBox
+					<a href="#" data-reveal-id="modal_eventbox">
+						<img src="img/eventbox.png"></a>
+
+					<div id="modal_eventbox" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">EventBox</h2>
+						<p class="lead">An Android App for managing events</p>
+						<p>This project's was developed for a Distributed Systems class.</p>
+						<p>My main tasks were the App's design as well as the integration of Twitter and Google Maps APIs.</p>
+						<img src="img/eventboxscreen.png">
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</li>
 				<li>
-					<a href="http://placehold.it/550x300"><img data-caption="caption 4 here..." src="http://placehold.it/550x300"></a>
+					FetchMe!
+					<a href="#" data-reveal-id="modal_fetchme">
+						<img src="img/fetchmelogo.png"></a>
+
+					<div id="modal_fetchme" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">FetchMe!</h2>
+						<p class="lead">A Web Application for exchanging favors.</p>
+						<p></p>
+						<p>On FetchMe! I did most the front-end and also helped on the database setup.</p>
+						<img src="img/fetchmescreen.png">
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
+				</li>
+			</ul>
+
+			<h5>Other projects:</h5>
+
+			<ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+				<li>
+					Chiivi_2.0
+					<a href="#" data-reveal-id="modal_chiivi">
+						<img src="img/chiivi.jpg"></a>
+
+					<div id="modal_chiivi" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">Chiivi v2.0</h2>
+						<p class="lead">A platform for managing objectives</p>
+						<p>I've been working on a new version of Chiivi, currently available at chiivi.com, for some months now, during the Summer.</p>
+						<p>Unfortunately, I'm not able to disclose many details, since it was not yet released to the public. It will soon, though! :)</p>
+						<p>What I can tell is that I've been working as a fullstack web developer, being responsible and focusing on the frontend. Chiivi is being developed
+						in PHP, using the Laravel 5.1 framework. More details soon!</p>
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
+				</li>
+				<li>
+					PortugalGamers
+					<a href="#" data-reveal-id="modal_pg">
+						<img src="img/pg.png"></a>
+
+					<div id="modal_pg" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+						<h2 id="modalTitle">Portugal Gamers</h2>
+						<p class="lead">A video games news portal.</p>
+						<p>Portugal Gamers is a fast-growing gaming portal in Portugal. I was one of the founders and have many responsabilities there, such as:
+							Webmaster, Editor, Quality-Control, Community Management and International PR.
+						</p>
+						http://portugalgamers.pt/
+						<img src="img/pgscreen.png">
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="row contact">
+	<div class="row contact" id="contact">
 		<hr>
 		<div class="large-12 columns">
 			<h4>Contact Me!</h4>
 			<div class="large-4 columns">
-				<strong>Email</strong>: 
-				<a href="#"><script type="text/javascript">
-					//<![CDATA[
-					<!--
-					var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-					"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-					" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
-					"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-					"\"(7)10\\\\,S\\\"]WFL3]00\\\\\\\\\\\\N\\\\\\\\2\\\\>17r830526\\\\0d\\\\jm7c" +
-					"17\\\\\\\\a3*!\\\\-\\\\\\\">\\\\jw33\\\\0g\\\\) .c!([R35\\\\0S\\\\2O03\\\\\\"+
-					"\\\\\\\\\\\\\\\\\\RJ5^02\\\\\\\\P_][rs\\\\\\\\0r02\\\\\\\\GI@^\\\\\\\\\\\\\\"+
-					"\\07\\\\04\\\\00\\\\\\\\IyAL17\\\\0L\\\\7v17\\\\\\\\{p+[! 8&:vu|yp4{xbcgehZ" +
-					"%b8pf i37\\\\0A\\\\S^24\\\\05\\\\02\\\\\\\\35\\\\03\\\\00\\\\\\\\37\\\\07\\" +
-					"\\00\\\\\\\\03\\\\0]\\\\06\\\\07\\\\03\\\\\\\\25\\\\02\\\\00\\\\\\\\33\\\\0" +
-					"6\\\\01\\\\\\\\03\\\\07\\\\01\\\\\\\\\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCo" +
-					"archx.e(odrChamCro.fngriSt+=;o27=1y%2;*=)yy)7+10>((iif){++;i<l;i=0(ior;fthn" +
-					"glex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                    ;
-					while(x=eval(x));
-					//-->
-					//]]>
+				<strong>Email</strong>:
+				<a href="#">
+					<script type="text/javascript">
+						//<![CDATA[
+						<!--
+						var x = "function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+							"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+							" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+							"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+							"\"(7)10\\\\,S\\\"]WFL3]00\\\\\\\\\\\\N\\\\\\\\2\\\\>17r830526\\\\0d\\\\jm7c" +
+							"17\\\\\\\\a3*!\\\\-\\\\\\\">\\\\jw33\\\\0g\\\\) .c!([R35\\\\0S\\\\2O03\\\\\\" +
+							"\\\\\\\\\\\\\\\\\\RJ5^02\\\\\\\\P_][rs\\\\\\\\0r02\\\\\\\\GI@^\\\\\\\\\\\\\\" +
+							"\\07\\\\04\\\\00\\\\\\\\IyAL17\\\\0L\\\\7v17\\\\\\\\{p+[! 8&:vu|yp4{xbcgehZ" +
+							"%b8pf i37\\\\0A\\\\S^24\\\\05\\\\02\\\\\\\\35\\\\03\\\\00\\\\\\\\37\\\\07\\" +
+							"\\00\\\\\\\\03\\\\0]\\\\06\\\\07\\\\03\\\\\\\\25\\\\02\\\\00\\\\\\\\33\\\\0" +
+							"6\\\\01\\\\\\\\03\\\\07\\\\01\\\\\\\\\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCo" +
+							"archx.e(odrChamCro.fngriSt+=;o27=1y%2;*=)yy)7+10>((iif){++;i<l;i=0(ior;fthn" +
+							"glex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")";
+						while (x = eval(x));
+						//-->
+						//]]>
 					</script>
 				</a>
 			</div>
@@ -116,7 +202,13 @@
 
 
 	<script src="js/foundation/foundation.clearing.js"></script>
+	<script src="/js/vendor/jquery.js"></script>
+	<script src="/js/vendor/fastclick.js"></script>
+	<script src="/js/foundation.min.js"></script>
 
+	<script>
+		$(document).foundation();
+	</script>
 
 </body>
 

@@ -18,7 +18,7 @@
 		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#">Tiago Cruzeiro</a></h1>
+					<h1><a href="#home">Tiago Cruzeiro</a></h1>
 				</li>
 
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -36,9 +36,9 @@
 		</nav>
 	</div>
 
-	<div class="hero">
+	<div class="hero" id="home">
 		<div class="row">
-			<div class="small-12 columns intro-text">
+			<div class="small-12 intro-text">
 				<h2>Hi there, I'm Tiago!</h2>
 				<p>
 					I'm a 24 year-old software developer,
@@ -63,7 +63,6 @@
 	</div>
 
 	<div class="row work" id="projects">
-		<hr>
 		<div class="small-12 columns">
 			<h4>Projects</h4>
 			<p>Throughout the years I've worked with a lot of stuff. Here you can check my favourite past projects.</p>
@@ -234,6 +233,23 @@
 
 	<script>
 		$(document).foundation();
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$('a[href^="#"]').on('click', function (e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function () {
+					window.location.hash = target;
+				});
+			});
+		});
 	</script>
 
 </body>

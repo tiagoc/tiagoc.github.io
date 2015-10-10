@@ -1,14 +1,19 @@
-	body {
+body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	background-color: rgba(0, 0, 0, 0.02);
 	text-align: justify;
 	height: 100%;
+	background-color: #252839;
+}
+
+.navbar * {
+	font-size: 22px !important;
 }
 
 .row {
 	min-height: 100%;
-	overflow: hidden
+	overflow: hidden;
 }
 
 .button {
@@ -47,20 +52,14 @@
 }
 
 .intro-text {
-	padding-top: 40%;
 	color: rgba(255, 255, 255, 1);
 	text-align: center;
+	padding-top: 20%;
 }
 
-@media only screen and (min-width: 40.063em) {
-	.intro-text {
-		padding-top: 25%;
-	}
-}
-
-@media only screen and (min-width: 64.063em) {
-	.intro-text {
-		padding-top: 18%;
+@media only screen and (max-width: 320px) {
+	body {
+		font-size: 0.7em;
 	}
 }
 
@@ -75,6 +74,18 @@
 	padding: 50px 0 0 0;
 	display: flex;
 	align-items: center;
+}
+
+.about {
+	background-color: #89bdd3;
+}
+
+#projects {
+	background-color: #e3e0cf;
+}
+
+.contact {
+	background-color: #f2b632;
 }
 
 .about img {
@@ -120,10 +131,6 @@ a.btn {
 
 .reveal-modal img {
 	max-height: 500px;
-}
-
-.contact {
-	vertical-align: text-top;
 }
 
 .icons {

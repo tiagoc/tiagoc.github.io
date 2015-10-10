@@ -13,8 +13,12 @@ body {
 }
 
 .row {
-	min-height: 100%;
+	min-height: 100vh;
 	overflow: hidden;
+	display: table;
+    width: 100%;
+    height: 100%;
+	max-width: none;
 }
 
 .button {
@@ -58,7 +62,7 @@ body {
 	padding-top: 20%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 385px) {
 	body {
 		font-size: 0.7em;
 	}
@@ -72,9 +76,12 @@ body {
 .about,
 .work,
 .contact {
-	padding: 50px 0 0 0;
-	display: flex;
-	align-items: center;
+	padding: 12% 0 0 0;
+	position: relative;
+}
+
+.about img{
+	margin-top: 3em;
 }
 
 .about {
@@ -96,6 +103,7 @@ body {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	object-fit: cover;
+	
 }
 
 .work img:hover {
@@ -111,6 +119,7 @@ body {
 .work li {
 	height: 200px;
 	overflow: hidden;
+	text-align: 
 }
 
 .intro-text h2 {
@@ -118,6 +127,7 @@ body {
 	font-size: 3em;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	margin: 0 0 20px;
+	font-family: 'Oleo Script', cursive;
 }
 
 a.btn {
@@ -147,6 +157,7 @@ a.btn {
 
 .icons ul li {
 	display: inline-block;
+	
 }
 
 .icons ul li a:hover {
@@ -161,3 +172,11 @@ a.btn {
 	border: 0;
 	margin-right: 10px;
 	color: inherit;
+}
+
+.floating-button {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+    transform: translate(-50%, 0);
+}

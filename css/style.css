@@ -1,8 +1,14 @@
-body {
+	body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	background-color: rgba(0, 0, 0, 0.02);
 	text-align: justify;
+	height: 100%;
+}
+
+.row {
+	min-height: 100%;
+	overflow: hidden
 }
 
 .button {
@@ -33,41 +39,11 @@ body {
 	}
 }
 
-.namelogo {
-	padding: 20px 10px 0px 10px;
-}
-
-@media only screen and (min-width: 40.063em) {
-	.namelogo {
-		padding-bottom: 20px;
-	}
-}
-
-.namelogo h1 {
-	font-size: 1.5em;
-	font-weight: 800;
-	text-align: center;
-}
-
-@media only screen and (min-width: 40.063em) {
-	.namelogo h1 {
-		font-size: 16px;
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 64.063em) {
-	.namelogo h1 {
-		font-size: 24px;
-		text-align: left;
-	}
-}
-
 .hero {
 	background: url("../img/background.jpg");
 	background-size: cover;
 	box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 0, 0.15);
-	height: 65%;
+	height: 100%;
 }
 
 .intro-text {
@@ -125,25 +101,6 @@ body {
 	overflow: hidden;
 }
 
-hr {
-	border: 0;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	opacity: 0.8;
-}
-
-footer {
-	padding: 80px 0 10px 0;
-}
-
-footer a:hover {
-	color: rgba(0, 0, 0, 0.4);
-	background-color: transparent;
-}
-
 .intro-text h2 {
 	color: #fff;
 	font-size: 3em;
@@ -165,35 +122,34 @@ a.btn {
 	max-height: 500px;
 }
 
-.contact{
-	margin-bottom: 10em;
+.contact {
 	vertical-align: text-top;
 }
 
-.icons{
+.icons {
 	text-align: center;
 }
 
-.icons ul{
-    position: relative;
-    display: inline-block;
-    padding: 0.35em 0.75em 0.35em 0.75em;
-    font-size: 2em;
+.icons ul {
+	position: relative;
+	display: inline-block;
+	padding: 0.35em 0.75em 0.35em 0.75em;
+	font-size: 2em;
 }
 
-.icons ul li{
+.icons ul li {
 	display: inline-block;
 }
 
 .icons ul li a:hover {
-    color: #ef8376;
+	color: #ef8376;
 }
 
 .icons ul li a {
-    display: inline-block;
-    background: none;
-    text-align: center;
-    border-radius: 100%;
-    border: 0;
+	display: inline-block;
+	background: none;
+	text-align: center;
+	border-radius: 100%;
+	border: 0;
 	margin-right: 10px;
-    color: inherit;
+	color: inherit;

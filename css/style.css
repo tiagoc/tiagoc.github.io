@@ -5,6 +5,7 @@ body {
 	text-align: justify;
 	height: 100%;
 	background-color: #252839;
+	text-rendering: optimizeLegibility;
 }
 
 .navbar * {

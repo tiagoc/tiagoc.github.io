@@ -44,6 +44,7 @@ a.btn {
 	bottom: 1em;
 	left: 50%;
 	transform: translate(-50%, 0);
+	z-index: 0;
 }
 
 .navbar * {
@@ -93,18 +94,24 @@ a.btn {
 .contact {
 	padding: 9% 0 0 0;
 	position: relative;
+	z-index: 1;
 }
 
 .about {
 	background-color: #89bdd3;
 }
 
-#projects {
+.work {
 	background-color: #e3e0cf;
 }
 
 .contact {
+	padding: 15%;
 	background-color: #f2b632;
+}
+
+.contact h1 {
+	margin-bottom: 1em;
 }
 
 .about img {
@@ -140,8 +147,8 @@ a.btn {
 .icons ul {
 	position: relative;
 	display: inline-block;
-	padding: 0.35em 0.75em 0.35em 0.75em;
-	font-size: 2em;
+	padding: 1em 0.75em 1em 0.75em;
+	font-size: 2.5em;
 }
 
 .icons ul li {
@@ -149,7 +156,7 @@ a.btn {
 }
 
 .icons ul li a:hover {
-	color: #ef8376;
+	color: #e3e0cf;
 }
 
 .icons ul li a {
@@ -160,4 +167,8 @@ a.btn {
 	border: 0;
 	margin-right: 10px;
 	color: inherit;
+}
+
+#cv{
+	margin-top: 2em;
 }

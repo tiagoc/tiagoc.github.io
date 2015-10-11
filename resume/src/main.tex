@@ -5,7 +5,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -14,6 +13,9 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+\usepackage{xcolor}
+\setlength{\fboxsep}{2pt}
+\newcommand{\keyword}[1]{\colorbox{gray!10}{#1}}
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
@@ -62,33 +64,36 @@
 %\cvitem{description}{Short thesis abstract}
 
 \section{Experience}
-\subsection{Vocational}
-\cventry{2015--Present}{Full Stack Web Developer}{Chiivi}{}{}{Chiivi is a WebApp for managing objectives. I'm working remotely on the 2nd version of the website, which has a focus on mobile and usability.\newline{}%
-Detailed achievements:%
+\cventry{2015--Present}{Full Stack Web Developer}{Chiivi}{}{}{Chiivi is a WebApp for managing objectives. Current tasks include heading development of the 2nd version of the website, which has a focus on responsive design and usability.
 \begin{itemize}%
-\item Remote work with an international team;
-\item PHP development, using Laravel;
-\item Usage of agile techniques.
+\item Backend development, using \keyword{PHP} with \keyword{Laravel};
+\item Frontend development with idiomatic, standards compliant \keyword{HTML5} and \keyword{CSS3};
+\item Remote work with an international team using \keyword{agile} techniques.
 \end{itemize}}
-\subsection{Miscellaneous}
-\cventry{2013--Present}{Webmaster, SysAdmin}{Portugal Gamers}{}{}{I was one of the founders of Portugal Gamers, now one of the top portals on the Portuguese gaming media. Besides being the Webmaster, I'm also one of the administrators and editor.}
+\cventry{2013--Present}{System Administrator (P/T)}{Portugal Gamers}{}{}{Co-founded this popular national gaming news website.  
+\begin{itemize}%
+\item Grew the website to the national top 5 through \keyword{SEO} and \keyword{social media} marketing;
+\item Achieved \keyword{99.99\% uptime} on very constrained hardware resources;
+\item Currently undertaking a major \keyword{redesign} according to \keyword{UX} and \keyword{responsive} design best practices.
+\end{itemize}
+\emph{Other tasks}: Senior editor responsible for reviewing major articles and guiding writers; Main liaison between the staff and major international industry players (sponsors, game publishers, etc.).}
 
 \section{Skills}
 \cvitem{Programming}{C, C++, Android, Javascript, Java, PHP}
 \cvitem{Databases}{SQL, MongoDB}
 \cvitem{Markup}{HTML, CSS, \LaTeX}
-\cvitem{Technologies}{OpenGL, Bootstrap, Foundation, Laravel, Yii, Node.JS}
+\cvitem{Technologies}{Bootstrap, Foundation, Laravel, Yii, Node.js, OpenGL}
 \cvitem{Versioning}{Git, SVN}
 \cvitem{Languages}{Portuguese - Native, English - Proficient, Spanish - Basic, French - Basic}
 
 \section{Extracurricular}
-\cventry{Participant}{RoboParty}{2009}{Guimarães, Portugal}{}{}
-\cventry{Student}{Study Holidays}{2010}{Peterborough, England}{}{}
-\cventry{Attendee}{Sapo Codebits}{2012 and 2014 editions}{Lisbon, Portugal}{}{}
-\cventry{Attendee}{ENEI (National meeting of Informatics Students)}{2011 edition}{Lisbon, Portugal}{}{}
-\cventry{Staff}{ENEI (National meeting of Informatics Students}{2013 edition}{Porto, Portugal}{}{}
-\cventry{Participant}{Finapps Party Barcelona}{2014 edition}{Barcelona, Spain}{}{}
 \cventry{Participant}{Porto Summer of Code}{2014 edition}{Porto, Portugal}{}{}
+\cventry{Participant}{Finapps Party Barcelona}{2014 edition}{Barcelona, Spain}{}{}
+\cventry{Staff}{National Meeting of Informatics Students}{2013 edition}{Porto, Portugal}{}{}
+\cventry{Participant}{Sapo Codebits}{2012 \& 2014 editions}{Lisbon, Portugal}{}{}
+\cventry{Participant}{National Meeting of Informatics Students}{2011 edition}{Lisbon, Portugal}{}{}
+\cventry{Participant}{Study Holidays}{2010}{Peterborough, England}{}{}
+\cventry{Participant}{RoboParty}{2009}{Guimarães, Portugal}{}{}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART

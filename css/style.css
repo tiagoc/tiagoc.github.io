@@ -30,9 +30,9 @@ a.btn {
 	color: #005c9e;
 	font-size: 1.1em;
 	border: 1px solid #fff;
-	padding: 10px 20px;
+	padding: 10px 16px;
 	background: rgba(255, 255, 255, 0.9);
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .reveal-modal img {
@@ -151,6 +151,7 @@ a.btn {
 
 .work {
 	background-color: #e3e0cf;
+    padding-bottom: 1em;
 }
 
 .thesis h1, .thesis h2, .thesis h3, .thesis p{

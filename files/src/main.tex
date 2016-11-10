@@ -5,33 +5,33 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}         % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{casual}                              % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}          % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                   % uncomment to suppress automatic page numbering for CVs longer than one page
 
 \usepackage{xcolor}
 \setlength{\fboxsep}{2pt}
 \newcommand{\keyword}[1]{\colorbox{gray!10}{#1}}
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}                         % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                               % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
 \setlength{\hintscolumnwidth}{2.7cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Tiago}{Cruzeiro}
-\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\title{Curriculum Vitae}                            % optional, remove / comment the line if not wanted
 \address{Travessa da Padela 7}{4935-378 Vila Nova de Anha}{Portugal}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+351 964 936 931}                   % optional, remove / comment the line if not wanted
-\email{tiagoc1991@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{tiagoc.info}                         % optional, remove / comment the line if not wanted
+\phone[mobile]{+351 964 936 931}                    % optional, remove / comment the line if not wanted
+\email{tiago.c.1991@gmail.com}                      % optional, remove / comment the line if not wanted
+\homepage{tiagoc.info}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -49,13 +49,13 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}            % to typeset your resume in Chinese using CJK
+%\begin{CJK*}{UTF8}{gbsn}                           % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-7mm}
+\vspace*{-11mm}
 
 \section{Education}
-\cventry{2009 -- 2016}{Master in Informatics and Computing Engineering}{\newline{}Faculdade de Engenharia da Universidade do Porto}{Porto, Portugal}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2009 -- 2016}{Master in Informatics and Computing Engineering}{\newline{}Faculdade de Engenharia da Universidade do Porto}{Porto, Portugal}{}{}                         % arguments 3 to 6 can be left empty
 \cventry{2006 -- 2009}{High School - Sciences and Technologies}{\newline{}Escola E.B. 2,3/S do Monte da Ola}{Vila Nova de Anha, Portugal}{}{}
 
 %\section{Master thesis}
@@ -64,20 +64,25 @@
 %\cvitem{description}{Short thesis abstract}
 
 \section{Experience}
-\cventry{March 2016 \\ August 2016}{Msc Student}{Fraunhofer AICOS}{}{}{Fraunhofer took me in to work on my Master Thesis - an Android library focused on battery optimisation. This research, along with its inclusion on other Fraunhofer projects, is my current focus.}
+\cventry{March 2016 \\ August 2016}{Msc Student}{Fraunhofer AICOS}{}{}{Fraunhofer took me in to work on my Master Thesis - an Android library focused on battery optimisation.
+\begin{itemize}%
+\item \keyword{Android} development, focusing on battery life;
+\item Javascript development, using \keyword{Node}, on an external server for data gathering;
+\end{itemize}
+}
+
 \cventry{July 2015 \\ September 2015}{Full Stack Web Developer}{Chiivi}{}{}{Chiivi is a WebApp for managing objectives. This contract consisted of heading development on the 2nd version of the website, which had a focus on responsive design and usability.
 \begin{itemize}%
 \item Backend development, using \keyword{PHP} with the \keyword{Laravel framework};
 \item Frontend development with idiomatic, standards compliant \keyword{HTML5} and \keyword{CSS3};
 \item Remote work with an international team using \keyword{agile} techniques.
 \end{itemize}}
-\cventry{December 2013 \\ Present}{System Administrator (P/T)}{Portugal Gamers}{}{}{Co-founded this popular national gaming news website.  
+\cventry{December 2013 \\ Present}{Webmaster (P/T)}{Portugal Gamers}{}{}{Co-founded this popular national gaming news website.  
 \begin{itemize}%
 \item Grew the website into a major player on the Portuguese market through \keyword{SEO} and \keyword{social media} marketing;
-\item Achieved \keyword{99.99\% uptime} on very constrained hardware resources;
-\item Currently undertaking a major \keyword{redesign} according to \keyword{UX} and \keyword{responsive} design best practices.
+\item Currently undertaking an overall \keyword{redesign} according to \keyword{UX} and \keyword{responsive} design best practices.
 \end{itemize}
-\emph{Other tasks}: Senior editor responsible for reviewing major articles and guiding writers; Main responsible for International P.R., Co-Administrator, Community Manager, Webmaster.}
+\emph{Other tasks}: Senior editor responsible for reviewing major articles and quality control; Main responsible for International P.R., Co-Administrator, Community Manager.}
 
 \section{Skills}
 \cvitem{Programming}{C, C++, Android, Javascript, Java, PHP}
@@ -88,32 +93,33 @@
 \cvitem{Languages}{Portuguese - Native, English - Proficient, Spanish - Basic, French - Basic}
 
 \section{Extracurricular}
+\cventry{Participant}{ImaginChallenge Barcelona}{2016 edition}{Barcelona, Spain}{}{}
+\cventry{Participant}{Pixels Camp}{2016 edition}{Lisbon, Portugal}{}{}
 \cventry{Participant}{Finapps Party Barcelona}{2014 \& 2015 editions}{Barcelona, Spain}{}{}
 \cventry{Participant}{Porto Summer of Code}{2014 edition}{Porto, Portugal}{}{}
-\cventry{Staff}{National Meeting of Informatics Students}{2013 edition}{Porto, Portugal}{}{}
 \cventry{Participant}{Sapo Codebits}{2012 \& 2014 editions}{Lisbon, Portugal}{}{}
-\cventry{Participant}{National Meeting of Informatics Students}{2011 edition}{Lisbon, Portugal}{}{}
+\cventry{Participant}{National Meeting of Informatics Students}{2011 \& 2013 edition (Staff)}{Lisbon, Portugal}{}{}
 \cventry{Participant}{Study Holidays}{2010}{Peterborough, England}{}{}
-\cventry{Participant}{RoboParty}{2009}{Guimarães, Portugal}{}{}
+\cventry{Participant}{RoboParty}{2009 edition}{Guimarães, Portugal}{}{}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+\bibliography{publications}                         % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
 %\nocitebook{book1,book2}
 %\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\bibliographybook{publications}                    % 'publications' is the name of a BibTeX file
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%\bibliographymisc{publications}                    % 'publications' is the name of a BibTeX file
 
 \clearpage
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+%\clearpage\end{CJK*}                               % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 

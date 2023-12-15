@@ -5,7 +5,7 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}         % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}         % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{casual}                              % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -28,7 +28,7 @@
 % personal data
 \name{Tiago}{Cruzeiro}
 \title{Curriculum Vitae}                            % optional, remove / comment the line if not wanted
-\address{Vila Nova de Gaia}{Portugal}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Maia}{Portugal}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+351 964 936 931}                    % optional, remove / comment the line if not wanted
 \email{tiago.c.1991@gmail.com}                      % optional, remove / comment the line if not wanted
 \homepage{tiagoc.info}                              % optional, remove / comment the line if not wanted
@@ -64,40 +64,45 @@
 %\cvitem{description}{Short thesis abstract}
 
 \section{Experience}
-\cventry{December 2016 \\ Current}{Senior Integration Engineer}{eProseed}{}{}{I'm currently working in the Porto office of eProseed, focusing on Oracle FMW solutions.
+\cventry{November 2020 \\ Current}{Engineering Lead}{Farfetch}{}{}{I'm currently an Engineering Lead on the FPS Integrations team.
 \begin{itemize}%
-\item Grew from a Junior SOA Consultant to a Senior position, and later got the role of Team Leader on a major international integration project;
-\item Delivered several projects successfully on different markets and technologies, with a focus on Oracle FMW;
+\item Onboarding brands on the Farfetch platform, from analysis and development, all the way to support;
+\item Team lead of a multi-location team, spanning different projects;
+\item \keyword{Event based} architecture. Core stack \keyword{Java Spring} + \keyword{Apache Camel}. \keyword{WSO2} for legacy support.
+\end{itemize}}
+\cventry{December 2016 \\ October 2020}{Senior Integration Engineer}{eProseed}{}{}{Joined eProseed as a junior developer and grew to a senior position, later getting the role of Team Lead on a major international integration project.
+\begin{itemize}%
+\item Focus on \keyword{Oracle FMW solutions};
+\item Delivered several projects successfully on different markets and technologies;
 \item Worked closely with the clients, with many on-site activities and daily support, including on-call service.
 \end{itemize}}
 \cventry{March 2016 \\ August 2016}{Msc Student}{Fraunhofer AICOS}{}{}{Fraunhofer took me in to work on my Master Thesis - an Android library aiming at battery optimisation.
 \begin{itemize}%
 \item \keyword{Android} and \keyword{Node.js} with a focus on data gathering;
 \end{itemize}}
-\cventry{July 2015 \\ September 2015}{Full Stack Web Developer}{Chiivi}{}{}{Chiivi is a WebApp for managing objectives. This contract consisted of heading development on the 2nd version of the website, which had a focus on responsive design and usability.
+\cventry{July 2015 \\ September 2015}{Full Stack Web Developer}{Chiivi}{}{}{Chiivi was a WebApp for managing objectives. This contract consisted of heading development on the 2nd version of the website, which had a focus on responsive design and usability.
 \begin{itemize}%
 \item Fullstack developer, using mainly \keyword{PHP} with the \keyword{Laravel framework}
 \item Remote work on an international team using \keyword{agile} tecniques
 \end{itemize}}
 \cventry{December 2013 \\ Present}{Webmaster (P/T)}{Portugal Gamers}{}{}{Co-founded this popular national gaming news website.  
 \begin{itemize}%
-\item Tasks: Senior editor; Main responsible for International P.R., Co-Administrator, Community Manager, System Administrator and Webmaster.
+\item Senior editor; Main responsible for International P.R., Co-Administrator, System Administrator and Webmaster.
 \end{itemize}
 }
 
 \section{Skills}
-\cvitem{Programming}{C, C++, Android, Javascript, Java, PHP, Oracle FMW}
+\cvitem{Programming}{Professional: Java, Javascript, PHP, Oracle FMW (SOA, OSB, BPM) \newline{}
+Academic: C, C++, Android}
 \cvitem{Databases}{SQL, MongoDB}
 \cvitem{Markup}{HTML, CSS, XML, JSON, \LaTeX}
-\cvitem{Technologies}{Bootstrap, Foundation, Laravel, Yii, Node.js, OpenGL}
+\cvitem{Technologies}{Bootstrap, Foundation, Laravel, Node.js, React.js}
 \cvitem{Versioning}{Git, SVN}
 \cvitem{Languages}{Portuguese - Native, English - Proficient, Spanish - Basic, French - Basic}
 
 \section{Extracurricular}
-\cventry{Participant}{Pixels Camp}{2018 \& 2019 editions}{Lisbon, Portugal}{}{}
-\cventry{Participant}{ImaginChallenge Barcelona}{2016 edition}{Barcelona, Spain}{}{}
-\cventry{Participant}{Pixels Camp}{2016 edition}{Lisbon, Portugal}{}{}
-\cventry{Participant}{Finapps Party Barcelona}{2014 \& 2015 editions}{Barcelona, Spain}{}{}
+\cventry{Participant}{Pixels Camp}{2016, 2018 \& 2019 editions}{Lisbon, Portugal}{}{}
+\cventry{Participant}{Finapps Party Barcelona}{2014, 2015 \& ImaginChallenge 2016 editions}{Barcelona, Spain}{}{}
 \cventry{Participant}{Porto Summer of Code}{2014 edition}{Porto, Portugal}{}{}
 \cventry{Participant}{Sapo Codebits}{2012 \& 2014 editions}{Lisbon, Portugal}{}{}
 \cventry{Participant}{National Meeting of Informatics Students}{2011 \& 2013 edition (Staff)}{Lisbon, Portugal}{}{}
@@ -109,7 +114,7 @@
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{publications}                         % 'publications' is the name of a BibTeX file
+%\bibliography{publications}                         % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
